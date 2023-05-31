@@ -47,3 +47,5 @@ def home():
     
 if __name__ == '__main__':
     app.run(debug=True)
+
+# This handle user registration and login.

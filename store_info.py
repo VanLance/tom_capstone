@@ -44,3 +44,5 @@ def login():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# When a user registers, their information is stored in the database by creating a new 'User' object and committing it to the session.

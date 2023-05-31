@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Error</h1>
-<p>An error has occurred while fetching recipes: {{ error }}</p>
+<div class="alert alert-danger" role=alert>
+  <h4 class="alert-heading">Error!, There's been an issue.</h4>
+  <p>{{ error }}</p>
+</div>
+
 {% endblock %}
+
+<!-- Remove h1 Error and the p tag description to include class and additional strings-->
+
+<!-- <h1>Error</h1>
+<p>An error has occurred while fetching recipes: {{ error }}</p> -->

@@ -14,3 +14,5 @@ def fetch_recipes():
     
 recipes = fetch_recipes()
 print(recipes)
+
+# Use the request to make a GET request to the API endpoint.

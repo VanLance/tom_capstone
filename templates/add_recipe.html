@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <h1>Add Recipe</h1>
+    <form method="POST" action="{{ url_for('add_recipe') }}">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required><br><br>
+
+        <label for="ingredients">Ingredients</label>
+        <textarea name="ingredients" id="ingredients" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="instructions">Instructions</label>
+        <textarea name="instructions" id="instructions" rows="8" cols="50" required></textarea><br><br>
+
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required><br><br>
+
+        <input type="submit" value="Add Recipe">
+    </form>
+</body>
+</html>

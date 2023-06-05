@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from config import Config
+from app import app
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -14,7 +15,7 @@ recipes = [
     {
         'title': 'Chocolate Chip Cookies',
         'ingredients': ['butter', 'sugar', 'flour', 'chocolate chips'],
-        'instructions': '1. Preheat oven to 375. ...',
+        'instructions': '1. Preheat oven to 375ºF. ...',
         'author': 'Luigi Fibonacci'
     }
 ]
@@ -48,15 +49,21 @@ if __name__ == '__main__':
     app.run()
 
 # Pasta Carbonara
-# STEP 1
-# Boil the pasta. Meanwhile, fry pancetta in oil in a frying pan for a few mins until golden and crisp. Add garlic, fry for 1 min, then turn off the heat. Briefly whisk egg and yolks with most of the Parmesan and some seasoning.
-
-# STEP 2
-# Drain pasta, reserving a little of the cooking water. Add eggs and a tap of cooking water, then mix until pasta is coated and creamy. The heat from the pasta will gently cook the sauce. Stir in the pancetta and garlic then serve, topped with the remaining Parmesan.
+# STEP 1: Cook pasta according to package directions. Drain well and set aside.
+# STEP 2: Meanwhile, place bacon in large skillet. Add butter and Garlic Paste. 
+# Cook on medium heat bacon is cooked through and lightly browned.
+# STEP 3: Whisk egg yolks, heavy cream, Parmesan, Basil Paste and Italian Herb Paste in medium bowl until well blended.
+# STEP 4: Add hot cooked pasta to skillet with bacon, tossing to mix well. 
+# Gradually add egg mixture, tossing to mix well and heat through. 
+# Serve immediately.
 
 # Chocolate Chip Cookies
-# 1. Beat the butter and sugars, then beat in the eggs and vanilla.
-# 2. Dissolve the baking soda in hot water and add to the mixture.
-# 3. Stir in the flour, chocolate chips, and walnuts.
-# 4. Drop dough onto a prepared baking sheet.
-# 5. Bake until the edges are golden brown.
+# 1. Stir flour with baking soda and salt; set aside.
+# 2. In large mixing bowl, beat butter with sugar, and brown sugar at medium speed until creamy and lightened in color.
+# 3. Add eggs and vanilla, one at a time. Mix on low speed until incorporated.
+# 4. Gradually blend dry mixture into creamed mixture. Stir in nuts and chocolate chips.
+# 5. Drop by tablespoon onto ungreased cookie sheets.
+# 6. Bake for 9 to 11 minutes or until chocolate chip cookies are golden brown.
+
+# Internet Source: www.gourmetgarden.com
+# Internet Source: www.ghirardelli.com
